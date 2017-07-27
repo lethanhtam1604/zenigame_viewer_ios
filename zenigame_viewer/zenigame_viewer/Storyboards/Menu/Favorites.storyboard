@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZlZ-Gy-jMx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--お気に入り-->
+        <scene sceneID="4ax-aG-Y2o">
+            <objects>
+                <viewController storyboardIdentifier="FavoritesViewController" title="お気に入り" id="ZlZ-Gy-jMx" customClass="FavoritesViewController" customModule="zenigame_viewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Eds-v4-7QO"/>
+                        <viewControllerLayoutGuide type="bottom" id="0eZ-J2-p1G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pSh-da-hQy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMc-S2-g2U">
+                                <rect key="frame" x="0.0" y="20" width="187.5" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="C94-6X-zDs"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="公式配信">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionTapOfficialBtn:" destination="ZlZ-Gy-jMx" eventType="touchUpInside" id="fMi-dd-UK2"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3jI-qb-U44">
+                                <rect key="frame" x="0.0" y="68" width="375" height="599"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtQ-QQ-Nzi">
+                                <rect key="frame" x="187.5" y="20" width="187.5" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="bdy-S1-mgA"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="ユーザー配信">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionTapUserBtn:" destination="ZlZ-Gy-jMx" eventType="touchUpInside" id="sx2-cM-UKC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3jI-qb-U44" firstAttribute="leading" secondItem="pSh-da-hQy" secondAttribute="leading" id="44A-CS-BtP"/>
+                            <constraint firstItem="gMc-S2-g2U" firstAttribute="leading" secondItem="pSh-da-hQy" secondAttribute="leading" id="4fa-on-s5s"/>
+                            <constraint firstAttribute="trailing" secondItem="mtQ-QQ-Nzi" secondAttribute="trailing" id="5CT-Cr-byt"/>
+                            <constraint firstItem="gMc-S2-g2U" firstAttribute="width" secondItem="mtQ-QQ-Nzi" secondAttribute="width" id="QpC-jT-svi"/>
+                            <constraint firstItem="0eZ-J2-p1G" firstAttribute="top" secondItem="3jI-qb-U44" secondAttribute="bottom" id="ScT-up-XQW"/>
+                            <constraint firstItem="gMc-S2-g2U" firstAttribute="top" secondItem="Eds-v4-7QO" secondAttribute="bottom" id="VjB-rN-mTF"/>
+                            <constraint firstItem="3jI-qb-U44" firstAttribute="top" secondItem="gMc-S2-g2U" secondAttribute="bottom" id="aWC-NB-CKq"/>
+                            <constraint firstItem="3jI-qb-U44" firstAttribute="top" secondItem="mtQ-QQ-Nzi" secondAttribute="bottom" id="kbE-YJ-rYG"/>
+                            <constraint firstItem="mtQ-QQ-Nzi" firstAttribute="leading" secondItem="gMc-S2-g2U" secondAttribute="trailing" id="n7o-Ps-UUT"/>
+                            <constraint firstAttribute="trailing" secondItem="3jI-qb-U44" secondAttribute="trailing" id="tS0-Si-1Yd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="officialBtn" destination="gMc-S2-g2U" id="vyP-Ez-Gug"/>
+                        <outlet property="tableView" destination="3jI-qb-U44" id="pNk-ye-vNE"/>
+                        <outlet property="userBtn" destination="mtQ-QQ-Nzi" id="FAv-FO-1Sk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dwS-d1-ipr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>

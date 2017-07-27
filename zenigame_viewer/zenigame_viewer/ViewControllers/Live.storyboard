@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Live View Controller-->
+        <scene sceneID="WhB-ir-o6T">
+            <objects>
+                <viewController storyboardIdentifier="LiveViewController" id="fMQ-4p-Dr5" customClass="LiveViewController" customModule="zenigame_viewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uM6-9E-21e"/>
+                        <viewControllerLayoutGuide type="bottom" id="TUD-Pv-0s3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2YT-1q-gan">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kIj-sD-yGu">
+                                <rect key="frame" x="0.0" y="41" width="375" height="180"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="v8M-ma-SmC"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kh4-AY-2U1">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="maM-LV-ai8">
+                                <rect key="frame" x="16" y="251" width="343" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.46997335400450313" blue="0.74560761658435148" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3on-9q-QNo"/>
+                                </constraints>
+                            </pageControl>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6JD-jq-m9D">
+                                <rect key="frame" x="16" y="289" width="343" height="265"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OQR-qj-E3P">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日のピックアップ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mI-hP-hMX">
+                                <rect key="frame" x="16" y="20" width="171.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="sTe-c0-7nW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="番組表へ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDA-3F-GN6">
+                                <rect key="frame" x="187.5" y="20" width="171.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="yCM-ed-bg4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zau-rp-9Dt">
+                                <rect key="frame" x="0.0" y="617" width="375" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="AUm-py-u5H"/>
+                                </constraints>
+                                <state key="normal" title="ランキング一覧"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrc-pZ-Isv">
+                                <rect key="frame" x="0.0" y="597" width="375" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="knH-XM-wAP"/>
+                                </constraints>
+                                <state key="normal" title="番組表"/>
+                                <connections>
+                                    <action selector="actionTapToTVProgramListButton:" destination="fMQ-4p-Dr5" eventType="touchUpInside" id="9Z1-ie-G99"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ZK-OF-qNV">
+                                <rect key="frame" x="0.0" y="607" width="375" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="FUs-VD-Pgn"/>
+                                </constraints>
+                                <state key="normal" title="配信中番組一覧"/>
+                                <connections>
+                                    <action selector="actionTapToDeliveriedTVProgramButton:" destination="fMQ-4p-Dr5" eventType="touchUpInside" id="jPH-82-lQp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUl-ES-fjE">
+                                <rect key="frame" x="0.0" y="627" width="375" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="FN8-Rf-ssS"/>
+                                </constraints>
+                                <state key="normal" title="ガチャ"/>
+                                <connections>
+                                    <action selector="actionTapToGachaButton:" destination="fMQ-4p-Dr5" eventType="touchUpInside" id="w7E-X9-Csx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCr-fl-HpX">
+                                <rect key="frame" x="0.0" y="637" width="375" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="exc-AL-4gU"/>
+                                </constraints>
+                                <state key="normal" title="フッター"/>
+                                <connections>
+                                    <action selector="actionTapToFooterButton:" destination="fMQ-4p-Dr5" eventType="touchUpInside" id="yET-5U-dAR"/>
+                                    <action selector="actionTapToRankingButton:" destination="fMQ-4p-Dr5" eventType="touchUpInside" id="uCA-Bf-XMd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOv-Vy-g5N">
+                                <rect key="frame" x="16" y="111" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Z2B-F5-8Yg"/>
+                                    <constraint firstAttribute="width" constant="40" id="oNe-VQ-eqS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="&lt;"/>
+                                <connections>
+                                    <action selector="actionBack:" destination="fMQ-4p-Dr5" eventType="touchUpInside" id="hAx-jn-HyE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CxY-DW-cYb">
+                                <rect key="frame" x="319" y="111" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1Tu-Mr-JzQ"/>
+                                    <constraint firstAttribute="width" constant="40" id="chc-dq-AZR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="&gt;"/>
+                                <connections>
+                                    <action selector="actionNext:" destination="fMQ-4p-Dr5" eventType="touchUpInside" id="KWP-Nc-kLS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bO-mW-Fml">
+                                <rect key="frame" x="0.0" y="577" width="375" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="1ns-4U-lfp"/>
+                                </constraints>
+                                <state key="normal" title="動画視聴画面"/>
+                                <connections>
+                                    <action selector="actionTapToDeliveryButton:" destination="fMQ-4p-Dr5" eventType="touchUpInside" id="40F-m5-fdZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bcd-Uu-001">
+                                <rect key="frame" x="0.0" y="587" width="375" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="H3C-S4-Ie7"/>
+                                </constraints>
+                                <state key="normal" title="番組ページ"/>
+                                <connections>
+                                    <action selector="actionTapToTVProgramButton:" destination="fMQ-4p-Dr5" eventType="touchUpInside" id="fsA-xU-MIY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="VDA-3F-GN6" firstAttribute="height" secondItem="0mI-hP-hMX" secondAttribute="height" id="03X-uh-grh"/>
+                            <constraint firstAttribute="trailing" secondItem="Bcd-Uu-001" secondAttribute="trailing" id="0ri-a4-UAd"/>
+                            <constraint firstItem="jUl-ES-fjE" firstAttribute="width" secondItem="4bO-mW-Fml" secondAttribute="width" id="5b6-Jb-s9t"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VDA-3F-GN6" secondAttribute="trailing" id="5k0-xC-fei"/>
+                            <constraint firstItem="5ZK-OF-qNV" firstAttribute="top" secondItem="wrc-pZ-Isv" secondAttribute="bottom" id="71I-FX-nvB"/>
+                            <constraint firstItem="0mI-hP-hMX" firstAttribute="leading" secondItem="2YT-1q-gan" secondAttribute="leadingMargin" id="7X0-nJ-y5I"/>
+                            <constraint firstItem="VDA-3F-GN6" firstAttribute="width" secondItem="0mI-hP-hMX" secondAttribute="width" id="8J8-vl-4Pn"/>
+                            <constraint firstAttribute="trailing" secondItem="nCr-fl-HpX" secondAttribute="trailing" id="8uh-6C-xum"/>
+                            <constraint firstItem="maM-LV-ai8" firstAttribute="top" secondItem="kIj-sD-yGu" secondAttribute="bottom" constant="30" id="9is-7U-iM1"/>
+                            <constraint firstItem="nCr-fl-HpX" firstAttribute="height" secondItem="4bO-mW-Fml" secondAttribute="height" id="B10-qr-zc0"/>
+                            <constraint firstItem="6JD-jq-m9D" firstAttribute="trailing" secondItem="2YT-1q-gan" secondAttribute="trailingMargin" id="CIQ-8A-EO0"/>
+                            <constraint firstAttribute="trailing" secondItem="jUl-ES-fjE" secondAttribute="trailing" id="Cp6-VW-n9D"/>
+                            <constraint firstItem="wrc-pZ-Isv" firstAttribute="top" secondItem="Bcd-Uu-001" secondAttribute="bottom" id="DQf-6x-EuY"/>
+                            <constraint firstAttribute="trailing" secondItem="5ZK-OF-qNV" secondAttribute="trailing" id="DTn-Gz-nqb"/>
+                            <constraint firstItem="4bO-mW-Fml" firstAttribute="top" secondItem="6JD-jq-m9D" secondAttribute="bottom" constant="23" id="DXf-Fh-3hj"/>
+                            <constraint firstItem="5ZK-OF-qNV" firstAttribute="width" secondItem="4bO-mW-Fml" secondAttribute="width" id="FKi-Z4-cuY"/>
+                            <constraint firstItem="5ZK-OF-qNV" firstAttribute="leading" secondItem="2YT-1q-gan" secondAttribute="leading" id="Gab-at-4b0"/>
+                            <constraint firstItem="maM-LV-ai8" firstAttribute="leading" secondItem="2YT-1q-gan" secondAttribute="leadingMargin" id="GgY-1s-w55"/>
+                            <constraint firstItem="Bcd-Uu-001" firstAttribute="leading" secondItem="2YT-1q-gan" secondAttribute="leading" id="Grf-hd-RvS"/>
+                            <constraint firstAttribute="trailing" secondItem="kIj-sD-yGu" secondAttribute="trailing" id="IPs-aE-Dsh"/>
+                            <constraint firstItem="Bcd-Uu-001" firstAttribute="top" secondItem="4bO-mW-Fml" secondAttribute="bottom" id="J9U-LO-Zzr"/>
+                            <constraint firstItem="6JD-jq-m9D" firstAttribute="top" secondItem="maM-LV-ai8" secondAttribute="bottom" constant="8" id="Jmg-pb-kW0"/>
+                            <constraint firstItem="6JD-jq-m9D" firstAttribute="leading" secondItem="2YT-1q-gan" secondAttribute="leadingMargin" id="Lca-8I-C0N"/>
+                            <constraint firstItem="CxY-DW-cYb" firstAttribute="centerY" secondItem="kIj-sD-yGu" secondAttribute="centerY" id="Nzr-Xo-sV0"/>
+                            <constraint firstItem="XOv-Vy-g5N" firstAttribute="centerY" secondItem="kIj-sD-yGu" secondAttribute="centerY" id="OEo-LC-JgH"/>
+                            <constraint firstItem="nCr-fl-HpX" firstAttribute="leading" secondItem="2YT-1q-gan" secondAttribute="leading" id="OiW-KQ-5CM"/>
+                            <constraint firstItem="zau-rp-9Dt" firstAttribute="height" secondItem="4bO-mW-Fml" secondAttribute="height" id="OxC-sJ-04w"/>
+                            <constraint firstAttribute="bottom" secondItem="nCr-fl-HpX" secondAttribute="bottom" constant="20" symbolic="YES" id="PpF-ce-PZK"/>
+                            <constraint firstItem="wrc-pZ-Isv" firstAttribute="leading" secondItem="2YT-1q-gan" secondAttribute="leading" id="S49-4H-u3l"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CxY-DW-cYb" secondAttribute="trailing" id="SLx-Kv-A8N"/>
+                            <constraint firstItem="zau-rp-9Dt" firstAttribute="top" secondItem="5ZK-OF-qNV" secondAttribute="bottom" id="WY9-lQ-77u"/>
+                            <constraint firstAttribute="trailing" secondItem="4bO-mW-Fml" secondAttribute="trailing" id="WxI-mC-meh"/>
+                            <constraint firstItem="Bcd-Uu-001" firstAttribute="width" secondItem="4bO-mW-Fml" secondAttribute="width" id="Xr5-pI-cv5"/>
+                            <constraint firstAttribute="trailing" secondItem="zau-rp-9Dt" secondAttribute="trailing" id="YIA-1k-QYU"/>
+                            <constraint firstItem="4bO-mW-Fml" firstAttribute="leading" secondItem="2YT-1q-gan" secondAttribute="leading" id="aad-k6-Ha1"/>
+                            <constraint firstItem="VDA-3F-GN6" firstAttribute="top" secondItem="uM6-9E-21e" secondAttribute="bottom" id="bdx-tE-v7b"/>
+                            <constraint firstItem="XOv-Vy-g5N" firstAttribute="leading" secondItem="2YT-1q-gan" secondAttribute="leadingMargin" id="be9-3h-adX"/>
+                            <constraint firstItem="0mI-hP-hMX" firstAttribute="top" secondItem="uM6-9E-21e" secondAttribute="bottom" id="ch3-nn-flr"/>
+                            <constraint firstItem="kIj-sD-yGu" firstAttribute="leading" secondItem="2YT-1q-gan" secondAttribute="leading" id="dMl-6m-NbR"/>
+                            <constraint firstItem="VDA-3F-GN6" firstAttribute="leading" secondItem="0mI-hP-hMX" secondAttribute="trailing" id="efV-GY-bM1"/>
+                            <constraint firstItem="5ZK-OF-qNV" firstAttribute="height" secondItem="4bO-mW-Fml" secondAttribute="height" id="ikn-jI-8Ck"/>
+                            <constraint firstItem="jUl-ES-fjE" firstAttribute="top" secondItem="zau-rp-9Dt" secondAttribute="bottom" id="isz-Ug-5TR"/>
+                            <constraint firstItem="Bcd-Uu-001" firstAttribute="height" secondItem="4bO-mW-Fml" secondAttribute="height" id="jZN-tZ-735"/>
+                            <constraint firstItem="zau-rp-9Dt" firstAttribute="width" secondItem="4bO-mW-Fml" secondAttribute="width" id="jiL-pR-2Dn"/>
+                            <constraint firstItem="jUl-ES-fjE" firstAttribute="leading" secondItem="2YT-1q-gan" secondAttribute="leading" id="l2o-yU-oRD"/>
+                            <constraint firstItem="wrc-pZ-Isv" firstAttribute="height" secondItem="4bO-mW-Fml" secondAttribute="height" id="leE-MB-OcF"/>
+                            <constraint firstItem="kIj-sD-yGu" firstAttribute="top" secondItem="VDA-3F-GN6" secondAttribute="bottom" id="nU7-cs-bxV"/>
+                            <constraint firstItem="nCr-fl-HpX" firstAttribute="top" secondItem="jUl-ES-fjE" secondAttribute="bottom" id="nVu-gn-fes"/>
+                            <constraint firstItem="wrc-pZ-Isv" firstAttribute="width" secondItem="4bO-mW-Fml" secondAttribute="width" id="oP3-2k-z8k"/>
+                            <constraint firstItem="jUl-ES-fjE" firstAttribute="height" secondItem="4bO-mW-Fml" secondAttribute="height" id="qhz-zB-6wR"/>
+                            <constraint firstAttribute="trailing" secondItem="wrc-pZ-Isv" secondAttribute="trailing" id="s2o-JW-9sa"/>
+                            <constraint firstItem="zau-rp-9Dt" firstAttribute="leading" secondItem="2YT-1q-gan" secondAttribute="leading" id="sMC-2q-KDf"/>
+                            <constraint firstItem="nCr-fl-HpX" firstAttribute="width" secondItem="4bO-mW-Fml" secondAttribute="width" id="xCY-eS-0Cv"/>
+                            <constraint firstItem="maM-LV-ai8" firstAttribute="trailing" secondItem="2YT-1q-gan" secondAttribute="trailingMargin" id="zUl-WI-cin"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="channelCollectionView" destination="kIj-sD-yGu" id="I4D-Mk-I4H"/>
+                        <outlet property="pageControl" destination="maM-LV-ai8" id="wAr-aj-y9G"/>
+                        <outlet property="tvProgramCollectionView" destination="6JD-jq-m9D" id="ox2-3I-DcY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E4V-TO-GBT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-448.80000000000001" y="-53.523238380809602"/>
+        </scene>
+    </scenes>
+</document>

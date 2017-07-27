@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Hsx-WK-DIZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ranking View Controller-->
+        <scene sceneID="xSh-oI-kZH">
+            <objects>
+                <viewController storyboardIdentifier="RankingViewController" id="Hsx-WK-DIZ" customClass="RankingViewController" customModule="zenigame_viewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3LH-vt-g9I"/>
+                        <viewControllerLayoutGuide type="bottom" id="hJ1-Q0-V14"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="92h-pS-CvC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4O4-jR-uKt">
+                                <rect key="frame" x="0.0" y="54" width="125" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="視聴者数">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYy-Yu-W13">
+                                <rect key="frame" x="250" y="54" width="125" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="PT順">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esy-xV-Djo">
+                                <rect key="frame" x="125" y="54" width="125" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="BZj-9F-moU"/>
+                                </constraints>
+                                <state key="normal" title="登録数">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="w4n-GJ-0fK">
+                                <rect key="frame" x="0.0" y="124" width="371" height="543"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4O4-jR-uKt" firstAttribute="top" secondItem="92h-pS-CvC" secondAttribute="top" constant="54" id="6Fo-Ze-hYm"/>
+                            <constraint firstItem="esy-xV-Djo" firstAttribute="top" secondItem="92h-pS-CvC" secondAttribute="top" constant="54" id="8JO-f5-Vld"/>
+                            <constraint firstItem="wYy-Yu-W13" firstAttribute="leading" secondItem="esy-xV-Djo" secondAttribute="trailing" id="9wG-Lp-QwB"/>
+                            <constraint firstAttribute="trailing" secondItem="wYy-Yu-W13" secondAttribute="trailing" id="Gh0-vP-4pP"/>
+                            <constraint firstItem="w4n-GJ-0fK" firstAttribute="leading" secondItem="92h-pS-CvC" secondAttribute="leading" id="Gif-WQ-6kX"/>
+                            <constraint firstItem="hJ1-Q0-V14" firstAttribute="top" secondItem="w4n-GJ-0fK" secondAttribute="bottom" id="KLd-Cb-Ay7"/>
+                            <constraint firstItem="wYy-Yu-W13" firstAttribute="height" secondItem="esy-xV-Djo" secondAttribute="height" id="MBF-xb-5Ro"/>
+                            <constraint firstItem="w4n-GJ-0fK" firstAttribute="top" secondItem="esy-xV-Djo" secondAttribute="bottom" constant="10" id="RFj-Ao-I2c"/>
+                            <constraint firstItem="wYy-Yu-W13" firstAttribute="width" secondItem="esy-xV-Djo" secondAttribute="width" id="ZSE-Ck-j43"/>
+                            <constraint firstItem="esy-xV-Djo" firstAttribute="centerX" secondItem="92h-pS-CvC" secondAttribute="centerX" id="bcL-xM-mXv"/>
+                            <constraint firstItem="4O4-jR-uKt" firstAttribute="height" secondItem="esy-xV-Djo" secondAttribute="height" id="giG-yb-S1k"/>
+                            <constraint firstItem="4O4-jR-uKt" firstAttribute="leading" secondItem="92h-pS-CvC" secondAttribute="leading" id="hmR-Hh-XAk"/>
+                            <constraint firstItem="4O4-jR-uKt" firstAttribute="width" secondItem="esy-xV-Djo" secondAttribute="width" id="vMk-f5-Mcq"/>
+                            <constraint firstItem="esy-xV-Djo" firstAttribute="leading" secondItem="4O4-jR-uKt" secondAttribute="trailing" id="wAe-lJ-1cZ"/>
+                            <constraint firstItem="wYy-Yu-W13" firstAttribute="top" secondItem="92h-pS-CvC" secondAttribute="top" constant="54" id="yXP-cj-EI9"/>
+                            <constraint firstAttribute="trailing" secondItem="w4n-GJ-0fK" secondAttribute="trailing" constant="4" id="yfr-1Y-rVl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="numberOfRegistrationBtn" destination="esy-xV-Djo" id="d99-Ab-Zlg"/>
+                        <outlet property="numberOfViewerBtn" destination="4O4-jR-uKt" id="FXy-iz-o6V"/>
+                        <outlet property="ptOrderBtn" destination="wYy-Yu-W13" id="lGG-Vj-tgl"/>
+                        <outlet property="tableView" destination="w4n-GJ-0fK" id="a1M-lg-W33"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ims-cP-iiL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.6" y="225.33733133433284"/>
+        </scene>
+    </scenes>
+</document>

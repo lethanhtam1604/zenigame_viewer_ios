@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wL2-Md-wIV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Event View Controller-->
+        <scene sceneID="eyC-i5-RQ4">
+            <objects>
+                <viewController storyboardIdentifier="EventViewController" id="wL2-Md-wIV" customClass="EventViewController" customModule="zenigame_viewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gOr-sn-SKE"/>
+                        <viewControllerLayoutGuide type="bottom" id="ts5-6w-nke"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nO5-IB-CPd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qCL-qI-AGh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Vpi-tH-TCV">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qCL-qI-AGh" firstAttribute="leading" secondItem="nO5-IB-CPd" secondAttribute="leading" id="3Pw-09-IpS"/>
+                            <constraint firstAttribute="trailing" secondItem="qCL-qI-AGh" secondAttribute="trailing" id="LwP-sC-6oZ"/>
+                            <constraint firstItem="qCL-qI-AGh" firstAttribute="top" secondItem="nO5-IB-CPd" secondAttribute="top" id="TFQ-Ur-mPw"/>
+                            <constraint firstItem="ts5-6w-nke" firstAttribute="top" secondItem="qCL-qI-AGh" secondAttribute="bottom" id="t1l-om-lWE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="eventCollectionView" destination="qCL-qI-AGh" id="Vv2-gs-VkB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dh2-vU-ZWA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="416.80000000000001" y="248.72563718140933"/>
+        </scene>
+    </scenes>
+</document>

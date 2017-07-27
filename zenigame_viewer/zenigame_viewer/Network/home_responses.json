@@ -1,0 +1,197 @@
+{
+    "pickup": {
+        "channels": [
+                     {
+                     "channel_id": 1,
+                     "thumbnail_url": "https://s-media-cache-ak0.pinimg.com/736x/cd/36/86/cd3686e61eb2d797e69a090b50908413.jpg",
+                     "watcher_count": 1123,
+                     "register_count": 1456,
+                     "pt_count": 1789,
+                     "start_at": "2017-03-01T19:00:00+09:00",
+                     "end_at": "2017-03-01T20:00:00+09:00"
+                     },
+                     {
+                     "channel_id": 2,
+                     "thumbnail_url": "https://s-media-cache-ak0.pinimg.com/736x/cd/36/86/cd3686e61eb2d797e69a090b50908413.jpg",
+                     "watcher_count": 2123,
+                     "register_count": 2456,
+                     "pt_count": 2789,
+                     "start_at": "2017-03-02T19:00:00+09:00",
+                     "end_at": "2017-03-02T20:00:00+09:00"
+                     },
+                     {
+                     "channel_id": 3,
+                     "thumbnail_url": "https://s-media-cache-ak0.pinimg.com/736x/cd/36/86/cd3686e61eb2d797e69a090b50908413.jpg",
+                     "watcher_count": 3123,
+                     "register_count": 3456,
+                     "pt_count": 3789,
+                     "start_at": "2017-03-03T19:00:00+09:00",
+                     "end_at": "2017-03-03T20:00:00+09:00"
+                     },
+                     {
+                     "channel_id": 4,
+                     "thumbnail_url": "https://s-media-cache-ak0.pinimg.com/736x/cd/36/86/cd3686e61eb2d797e69a090b50908413.jpg",
+                     "watcher_count": 4123,
+                     "register_count": 4456,
+                     "pt_count": 4789,
+                     "start_at": "2017-03-04T19:00:00+09:00",
+                     "end_at": "2017-03-04T20:00:00+09:00"
+                     },
+                     {
+                     "channel_id": 5,
+                     "thumbnail_url": "https://s-media-cache-ak0.pinimg.com/736x/cd/36/86/cd3686e61eb2d797e69a090b50908413.jpg",
+                     "watcher_count": 5123,
+                     "register_count": 5456,
+                     "pt_count": 5789,
+                     "start_at": "2017-03-05T19:00:00+09:00",
+                     "end_at": "2017-03-05T20:00:00+09:00"
+                     }
+        ]
+    },
+    "delivery": {
+        "channels": [
+                     {
+                     "channel_id": 1,
+                     "thumbnail_url": "https://s-media-cache-ak0.pinimg.com/736x/cd/36/86/cd3686e61eb2d797e69a090b50908413.jpg",
+                     "watcher_count": 1123,
+                     "register_count": 1456,
+                     "pt_count": 1789,
+                     "start_at": "2017-03-01T19:00:00+09:00",
+                     "end_at": "2017-03-01T20:00:00+09:00"
+                     },
+                     {
+                     "channel_id": 2,
+                     "thumbnail_url": "https://s-media-cache-ak0.pinimg.com/736x/cd/36/86/cd3686e61eb2d797e69a090b50908413.jpg",
+                     "watcher_count": 2123,
+                     "register_count": 2456,
+                     "pt_count": 2789,
+                     "start_at": "2017-03-02T19:00:00+09:00",
+                     "end_at": "2017-03-02T20:00:00+09:00"
+                     },
+                     {
+                     "channel_id": 3,
+                     "thumbnail_url": "https://s-media-cache-ak0.pinimg.com/736x/cd/36/86/cd3686e61eb2d797e69a090b50908413.jpg",
+                     "watcher_count": 3123,
+                     "register_count": 3456,
+                     "pt_count": 3789,
+                     "start_at": "2017-03-03T19:00:00+09:00",
+                     "end_at": "2017-03-03T20:00:00+09:00"
+                     },
+                     {
+                     "channel_id": 4,
+                     "thumbnail_url": "https://s-media-cache-ak0.pinimg.com/736x/cd/36/86/cd3686e61eb2d797e69a090b50908413.jpg",
+                     "watcher_count": 4123,
+                     "register_count": 4456,
+                     "pt_count": 4789,
+                     "start_at": "2017-03-04T19:00:00+09:00",
+                     "end_at": "2017-03-04T20:00:00+09:00"
+                     },
+                     {
+                     "channel_id": 5,
+                     "thumbnail_url": "https://s-media-cache-ak0.pinimg.com/736x/cd/36/86/cd3686e61eb2d797e69a090b50908413.jpg",
+                     "watcher_count": 5123,
+                     "register_count": 5456,
+                     "pt_count": 5789,
+                     "start_at": "2017-03-05T19:00:00+09:00",
+                     "end_at": "2017-03-05T20:00:00+09:00"
+                     }
+        ]
+    },
+    "event": {
+        "events": [
+                   {
+                   "event_id": 1,
+                   "thumbnail_url": "https://s-media-cache-ak0.pinimg.com/736x/cd/36/86/cd3686e61eb2d797e69a090b50908413.jpg",
+                   },
+                   {
+                   "event_id": 2,
+                   "thumbnail_url": "https://s-media-cache-ak0.pinimg.com/736x/cd/36/86/cd3686e61eb2d797e69a090b50908413.jpg",
+                   },
+                   {
+                   "event_id": 3,
+                   "thumbnail_url": "https://s-media-cache-ak0.pinimg.com/736x/cd/36/86/cd3686e61eb2d797e69a090b50908413.jpg",
+                   },
+                   {
+                   "event_id": 4,
+                   "thumbnail_url": "https://s-media-cache-ak0.pinimg.com/736x/cd/36/86/cd3686e61eb2d797e69a090b50908413.jpg",
+                   },
+                   {
+                   "event_id": 5,
+                   "thumbnail_url": "https://s-media-cache-ak0.pinimg.com/736x/cd/36/86/cd3686e61eb2d797e69a090b50908413.jpg",
+                   }
+        ]
+    },
+    "ranking": {
+        "channels": [
+                     {
+                     "channel_id": 1,
+                     "thumbnail_url": "https://s-media-cache-ak0.pinimg.com/736x/cd/36/86/cd3686e61eb2d797e69a090b50908413.jpg",
+                     "watcher_count": 1123,
+                     "register_count": 1456,
+                     "pt_count": 1789,
+                     "start_at": "2017-03-01T19:00:00+09:00",
+                     "end_at": "2017-03-01T20:00:00+09:00"
+                     },
+                     {
+                     "channel_id": 2,
+                     "thumbnail_url": "https://s-media-cache-ak0.pinimg.com/736x/cd/36/86/cd3686e61eb2d797e69a090b50908413.jpg",
+                     "watcher_count": 2123,
+                     "register_count": 2456,
+                     "pt_count": 2789,
+                     "start_at": "2017-03-02T19:00:00+09:00",
+                     "end_at": "2017-03-02T20:00:00+09:00"
+                     },
+                     {
+                     "channel_id": 3,
+                     "thumbnail_url": "https://s-media-cache-ak0.pinimg.com/736x/cd/36/86/cd3686e61eb2d797e69a090b50908413.jpg",
+                     "watcher_count": 3123,
+                     "register_count": 3456,
+                     "pt_count": 3789,
+                     "start_at": "2017-03-03T19:00:00+09:00",
+                     "end_at": "2017-03-03T20:00:00+09:00"
+                     },
+                     {
+                     "channel_id": 4,
+                     "thumbnail_url": "https://s-media-cache-ak0.pinimg.com/736x/cd/36/86/cd3686e61eb2d797e69a090b50908413.jpg",
+                     "watcher_count": 4123,
+                     "register_count": 4456,
+                     "pt_count": 4789,
+                     "start_at": "2017-03-04T19:00:00+09:00",
+                     "end_at": "2017-03-04T20:00:00+09:00"
+                     },
+                     {
+                     "channel_id": 5,
+                     "thumbnail_url": "https://s-media-cache-ak0.pinimg.com/736x/cd/36/86/cd3686e61eb2d797e69a090b50908413.jpg",
+                     "watcher_count": 5123,
+                     "register_count": 5456,
+                     "pt_count": 5789,
+                     "start_at": "2017-03-05T19:00:00+09:00",
+                     "end_at": "2017-03-05T20:00:00+09:00"
+                     }
+        ]
+    },
+    "gacha": {
+        "gachas": [
+                   {
+                   "gacha_id": 1,
+                   "thumbnail_url": "https://s-media-cache-ak0.pinimg.com/736x/cd/36/86/cd3686e61eb2d797e69a090b50908413.jpg",
+                   },
+                   {
+                   "gacha_id": 2,
+                   "thumbnail_url": "https://s-media-cache-ak0.pinimg.com/736x/cd/36/86/cd3686e61eb2d797e69a090b50908413.jpg",
+                   },
+                   {
+                   "gacha_id": 3,
+                   "thumbnail_url": "https://s-media-cache-ak0.pinimg.com/736x/cd/36/86/cd3686e61eb2d797e69a090b50908413.jpg",
+                   },
+                   {
+                   "gacha_id": 4,
+                   "thumbnail_url": "https://s-media-cache-ak0.pinimg.com/736x/cd/36/86/cd3686e61eb2d797e69a090b50908413.jpg",
+                   },
+                   {
+                   "gacha_id": 5,
+                   "thumbnail_url": "https://s-media-cache-ak0.pinimg.com/736x/cd/36/86/cd3686e61eb2d797e69a090b50908413.jpg",
+                   }
+        ]
+    }
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--お問い合わせ-->
+        <scene sceneID="2n5-SI-nV6">
+            <objects>
+                <viewController storyboardIdentifier="ContactViewController" id="gvc-Df-t5z" customClass="ContactViewController" customModule="zenigame_viewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZH5-B2-5rM"/>
+                        <viewControllerLayoutGuide type="bottom" id="wW7-Qv-cjP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W7I-bM-AUr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="お問い合わせに関する注意" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRX-UD-CHa">
+                                <rect key="frame" x="30" y="84" width="315" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7a-Mf-JKH">
+                                <rect key="frame" x="137.5" y="124.5" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1nl-YN-JWm"/>
+                                    <constraint firstAttribute="width" constant="100" id="Xcm-aj-glB"/>
+                                </constraints>
+                                <state key="normal" title="FAQ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionTapToFAQButton:" destination="gvc-Df-t5z" eventType="touchUpInside" id="SV8-CA-Cke"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCo-3H-NCB">
+                                <rect key="frame" x="87" y="415.5" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fbZ-74-e5t"/>
+                                    <constraint firstAttribute="width" constant="200" id="jn6-r4-OBa"/>
+                                </constraints>
+                                <state key="normal" title="お問い合わせ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionTapToContactButton:" destination="gvc-Df-t5z" eventType="touchUpInside" id="jdo-60-ZoW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="お問合わせはこちら↓\n（メーラーが起動します）" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzM-uU-BtR">
+                                <rect key="frame" x="30" y="354.5" width="315" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fRX-UD-CHa" secondAttribute="trailing" constant="30" id="0Vy-j5-2Mk"/>
+                            <constraint firstItem="vzM-uU-BtR" firstAttribute="top" secondItem="a7a-Mf-JKH" secondAttribute="bottom" constant="200" id="4RA-F8-y7S"/>
+                            <constraint firstItem="a7a-Mf-JKH" firstAttribute="centerX" secondItem="W7I-bM-AUr" secondAttribute="centerX" id="LXX-Hg-I9j"/>
+                            <constraint firstItem="a7a-Mf-JKH" firstAttribute="top" secondItem="fRX-UD-CHa" secondAttribute="bottom" constant="20" id="Nfw-uC-eyi"/>
+                            <constraint firstItem="hCo-3H-NCB" firstAttribute="centerX" secondItem="W7I-bM-AUr" secondAttribute="centerX" id="SSx-fA-45a"/>
+                            <constraint firstItem="fRX-UD-CHa" firstAttribute="leading" secondItem="W7I-bM-AUr" secondAttribute="leading" constant="30" id="Y9h-nJ-sD3"/>
+                            <constraint firstItem="fRX-UD-CHa" firstAttribute="top" secondItem="ZH5-B2-5rM" secondAttribute="bottom" constant="64" id="bkF-UA-wx3"/>
+                            <constraint firstItem="hCo-3H-NCB" firstAttribute="top" secondItem="vzM-uU-BtR" secondAttribute="bottom" constant="20" id="e0j-6l-qaV"/>
+                            <constraint firstItem="vzM-uU-BtR" firstAttribute="leading" secondItem="W7I-bM-AUr" secondAttribute="leading" constant="30" id="loO-5P-mUW"/>
+                            <constraint firstAttribute="trailing" secondItem="vzM-uU-BtR" secondAttribute="trailing" constant="30" id="tHI-w8-hmX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="お問い合わせ" id="OsP-tM-Kca"/>
+                    <connections>
+                        <outlet property="contactButton" destination="hCo-3H-NCB" id="FZB-ki-9Yn"/>
+                        <outlet property="contactTitleLabel" destination="vzM-uU-BtR" id="tbh-Wq-Glp"/>
+                        <outlet property="faqButton" destination="a7a-Mf-JKH" id="O5n-5i-LMP"/>
+                        <outlet property="titleLabel" destination="fRX-UD-CHa" id="dmO-0J-IgB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JW3-Dz-mFL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1159.2" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
